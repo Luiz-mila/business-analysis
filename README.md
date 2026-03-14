@@ -7,33 +7,63 @@
 
 ## 🎯 Project Overview
 
-**Business Problem:** Company leadership needs comprehensive insights into payroll costs, revenue performance, employee productivity, and departmental efficiency to make data-driven strategic decisions.
+Professional business performance analysis focusing on payroll optimization, revenue growth, and employee productivity across multiple departments.
 
-**Solution:** End-to-end business analytics using Python to analyze HR, client, and service data across multiple dimensions—payroll, revenue, employee performance, and departmental metrics.
+**Business Challenge:** Leadership needs data-driven insights into cost structure, revenue patterns, and workforce efficiency to guide strategic decisions.
 
-**Key Deliverables:** Executive dashboard with actionable recommendations for cost optimization, revenue growth, and operational efficiency.
+**Solution:** Comprehensive Python-based analysis of HR, client, and service data delivering actionable recommendations for cost reduction and revenue growth.
 
 ---
 
 ## 📈 Key Findings
 
-### 💰 Financial Metrics
-- **Total Monthly Payroll:** R$ XXX,XXX
-- **Total Company Revenue:** R$ X,XXX,XXX
+### 💰 Financial Performance
+- **Total Monthly Payroll:** R$ 226,932
+- **Total Company Revenue:** R$ 2,850,768
 - **Average Contract Value:** R$ 2,502.56
-- **Contract Range:** R$ 450 - R$ 4,500
+- **Revenue Concentration:** Top 3 clients = 28.5% of total revenue
 
-### 👥 Workforce Performance
-- **Commercially Active Employees:** 86.84%
-- **Employees Without Contracts:** 13.16%
-- **Top Performing Department:** Commercial (highest contract volume)
-- **Cost Leader:** Administrative (opportunity for optimization)
+### 👥 Workforce Metrics
+- **Employee Activity Rate:** 86.8%
+- **Inactive Employees:** 13.2% (training opportunity)
+- **Highest Cost Center:** Administrative department
+- **Best Performing:** Commercial department (contract volume)
 
-### 🎯 Strategic Insights
-- Top 3 clients generate disproportionate revenue (concentration risk)
-- 13% of employees underperforming commercially (training opportunity)
-- Administrative department shows highest costs (automation potential)
-- Healthy client diversity with mid-market positioning
+### 🎯 Strategic Opportunities
+- **15% potential cost savings** through Administrative automation
+- **€XXX,XXX revenue upside** from training inactive employees
+- **Client diversification** needed to reduce concentration risk
+- **Tiered pricing strategy** to capture broader market segments
+
+---
+
+## 📊 Data Visualizations
+
+### Payroll Distribution
+![Payroll by Department](outputs/payroll_by_department.png)
+
+*Administrative department shows highest costs - prime candidate for process automation and efficiency improvements.*
+
+---
+
+### Revenue Performance
+![Top 10 Clients](outputs/top_10_clients.png)
+
+*Concentrated revenue base in top clients presents both opportunity (upselling) and risk (dependency).*
+
+---
+
+### Department Performance
+![Contracts by Department](outputs/contracts_by_department.png)
+
+*Commercial department leads in contract volume as expected, while Operations shows strong secondary performance.*
+
+---
+
+### Workforce Allocation
+![Headcount by Department](outputs/headcount_by_department.png)
+
+*Headcount allocation reveals potential for resource rebalancing based on workload and revenue contribution.*
 
 ---
 
@@ -41,134 +71,73 @@
 ```
 business-analysis/
 ├── data/
-│   ├── clients.csv              # Client information and contracts
-│   ├── employees.csv            # Employee data and compensation
-│   └── services.xlsx            # Service contracts and performance
+│   ├── clients.csv              # Client contracts and demographics
+│   ├── employees.csv            # Employee compensation data
+│   └── services.xlsx            # Service delivery records
 ├── notebooks/
 │   └── business_analysis.ipynb  # Complete analysis workflow
-├── outputs/                     # Generated charts and reports
+├── outputs/
+│   ├── payroll_by_department.png
+│   ├── top_10_clients.png
+│   ├── contracts_by_department.png
+│   └── headcount_by_department.png
+├── .gitignore
 ├── requirements.txt
 └── README.md
 ```
 
 ---
 
-## 🛠️ Technical Implementation
-
-### Data Processing Pipeline
-
-**1. Data Loading & Cleaning**
-- Multi-source data integration (CSV, Excel)
-- Column standardization (Portuguese → English)
-- Data type conversions and validation
-
-**2. Feature Engineering**
-```python
-# Total compensation calculation
-total_compensation = (
-    base_salary + taxes + benefits + 
-    transportation_allowance + meal_allowance
-)
-
-# Revenue per contract
-total_revenue = contract_duration_months * monthly_contract_value
-```
-
-**3. Analysis Dimensions**
-- Payroll analysis by department and employee
-- Revenue analysis by client and contract
-- Employee productivity metrics
-- Departmental performance comparison
-
----
-
-## 📊 Analysis Breakdown
-
-### 1️⃣ **Payroll Analysis**
-**Objective:** Understand total compensation costs and identify optimization opportunities
-
-**Key Metrics:**
-- Total monthly payroll
-- Cost breakdown by department
-- Individual employee compensation
-
-**Insight:** Administrative department accounts for highest costs despite moderate contract volume
-
----
-
-### 2️⃣ **Revenue Analysis**
-**Objective:** Identify top revenue-generating clients and contract patterns
-
-**Key Metrics:**
-- Total company revenue
-- Revenue per client (top 10)
-- Average contract value
-
-**Insight:** Client concentration in top tier suggests need for diversification strategy
-
----
-
-### 3️⃣ **Employee Performance**
-**Objective:** Measure commercial productivity across workforce
-
-**Key Metrics:**
-- Percentage of active vs. inactive employees
-- Contracts per employee
-- Performance by department
-
-**Insight:** 86.84% productivity rate is strong, but 13% underperformers represent untapped potential
-
----
-
-### 4️⃣ **Department Analysis**
-**Objective:** Compare departmental efficiency and resource allocation
-
-**Key Metrics:**
-- Contracts by department
-- Headcount by department
-- Cost-to-output ratio
-
-**Insight:** Opportunity to reallocate resources based on workload and revenue contribution
-
----
-
 ## 💡 Business Recommendations
 
-### Revenue Growth
-✅ Implement upselling strategies for top 10 clients  
-✅ Develop tiered service packages (entry/premium)  
-✅ Cross-sell services between departments  
-✅ Address client concentration risk through diversification  
-
 ### Cost Optimization
-✅ Automate Administrative processes (highest cost center)  
-✅ Implement performance-based compensation  
-✅ Right-size teams based on workload analysis  
+✅ **Automate Administrative processes** (highest cost center)  
+✅ **Implement performance-based compensation** aligned with revenue generation  
+✅ **Right-size teams** based on workload analysis  
+
+### Revenue Growth
+✅ **Upsell top 10 clients** (proven relationships, high trust)  
+✅ **Develop tiered service packages** (entry, standard, premium)  
+✅ **Cross-sell services** between departments  
+✅ **Reduce client concentration** through targeted acquisition  
 
 ### Talent Development
-✅ Commercial training for 13% underperforming staff  
-✅ Knowledge sharing from top performers  
-✅ Implement peer mentoring program  
-
-### Operational Excellence
-✅ Standardize contract management processes  
-✅ Data-driven resource allocation  
-✅ Quarterly performance reviews with KPI tracking  
+✅ **Commercial training** for 13% inactive employees  
+✅ **Knowledge sharing** from top performers  
+✅ **Performance metrics** tied to contract generation  
 
 ---
 
-## 🚀 How to Run This Project
+## 🛠️ Technical Stack
+
+### Data Processing
+- **Pandas** - Data manipulation and aggregation
+- **NumPy** - Numerical computations
+- **OpenPyXL** - Excel file handling
+
+### Visualization
+- **Matplotlib** - Core plotting library
+- **Seaborn** - Statistical visualizations
+
+### Analysis Approach
+- Multi-source data integration (CSV, Excel)
+- Feature engineering (total compensation calculation)
+- Departmental comparative analysis
+- Client segmentation and ranking
+
+---
+
+## 🚀 How to Run
 
 ### Prerequisites
 ```bash
 Python 3.8+
 Jupyter Notebook
-Required libraries (see requirements.txt)
 ```
 
 ### Installation
 
-1. **Clone the repository**
+1. **Clone repository**
 ```bash
 git clone https://github.com/Luiz-mila/business-analysis.git
 cd business-analysis
@@ -180,7 +149,7 @@ pip install -r requirements.txt
 ```
 
 3. **Add data files**
-Place the following files in `data/` folder:
+Place CSV/Excel files in `data/` folder:
 - `clients.csv`
 - `employees.csv`
 - `services.xlsx`
@@ -190,71 +159,58 @@ Place the following files in `data/` folder:
 jupyter notebook notebooks/business_analysis.ipynb
 ```
 
+5. **View results**
+All visualizations saved automatically to `outputs/` folder.
+
 ---
 
 ## 📚 Data Schema
 
-### Employees Dataset
-| Column | Description |
-|--------|-------------|
-| employee_id | Unique employee identifier |
-| full_name | Employee full name |
-| department | Administrative, Commercial, Financial, Operations, Logistics |
-| base_salary | Base monthly salary |
-| taxes | Tax withholdings |
-| benefits | Benefits package value |
-| transportation_allowance | Monthly transportation stipend |
-| meal_allowance | Monthly meal vouchers |
+### Employees (`employees.csv`)
+- `employee_id` - Unique identifier
+- `full_name` - Employee name
+- `department` - Administrative, Commercial, Financial, Operations, Logistics
+- `base_salary`, `taxes`, `benefits` - Compensation components
+- `transportation_allowance`, `meal_allowance` - Additional benefits
 
-### Clients Dataset
-| Column | Description |
-|--------|-------------|
-| client_id | Unique client identifier |
-| client_name | Client company/individual name |
-| birth_date | Date of birth |
-| state | Geographic location |
-| gender | Gender identifier |
-| registration_date | Client onboarding date |
-| profession | Primary profession/industry |
-| monthly_contract_value | Recurring monthly payment |
+### Clients (`clients.csv`)
+- `client_id` - Unique identifier
+- `client_name` - Client company/individual
+- `monthly_contract_value` - Recurring monthly revenue
+- `registration_date`, `profession`, `state` - Demographics
 
-### Services Dataset
-| Column | Description |
-|--------|-------------|
-| employee_id | Service provider identifier |
-| client_id | Client identifier |
-| service_date | Date of service delivery |
-| service_type | Type/category of service |
-| service_value | One-time service value |
-| contract_duration_months | Total contract length |
-| monthly_contract_value | Recurring monthly payment |
+### Services (`services.xlsx`)
+- `employee_id`, `client_id` - Relationship keys
+- `service_date`, `service_type` - Service details
+- `contract_duration_months` - Contract length
+- `monthly_contract_value` - Recurring revenue
 
 ---
 
 ## 🎓 Skills Demonstrated
 
-### Python & Data Analysis
-✅ Multi-source data integration (CSV, Excel)  
-✅ Pandas for data manipulation and transformation  
-✅ Data cleaning and standardization  
-✅ Feature engineering and derived metrics  
-
-### Business Intelligence
+### Business Analysis
 ✅ Financial analysis (payroll, revenue, profitability)  
-✅ Employee productivity metrics  
+✅ Workforce productivity metrics  
 ✅ Departmental performance comparison  
-✅ Client segmentation and concentration analysis  
+✅ Client segmentation and concentration risk  
+
+### Python & Data Science
+✅ Multi-source data integration  
+✅ Pandas for data transformation  
+✅ Feature engineering  
+✅ Statistical analysis  
 
 ### Data Visualization
-✅ Matplotlib and Seaborn for professional charts  
-✅ Executive dashboard design  
-✅ Strategic insight presentation  
+✅ Professional chart design  
+✅ Executive dashboard creation  
+✅ Strategic insight communication  
 
 ### Strategic Thinking
-✅ Actionable business recommendations  
+✅ Actionable recommendations  
 ✅ Cost-benefit analysis  
 ✅ Growth opportunity identification  
-✅ Risk assessment (client concentration)  
+✅ Risk assessment  
 
 ---
 
@@ -263,11 +219,13 @@ jupyter notebook notebooks/business_analysis.ipynb
 **Luiz Milaré**  
 Business Intelligence & Data Analyst
 
-Data professional focused on transforming complex datasets into strategic insights. Experienced in revenue analysis, performance metrics, and behavioral pattern detection across large-scale datasets.
+Data professional focused on transforming complex datasets into strategic insights. Experienced in revenue analysis, performance metrics, and behavioral pattern detection.
 
-📧 Email: milahercu@gmail.com
-💼 LinkedIn: https://www.linkedin.com/in/luiz-milar%C3%A9-a5869519a/ 
-🐙 GitHub: https://github.com/Luiz-mila 
+📧 Email: luizmilare958@gmail.com
+
+💼 LinkedIn: www.linkedin.com/in/luiz-milar%C3%A9-a5869519a/
+
+🐙 GitHub: https://github.com/Luiz-mila
 
 ---
 
@@ -279,5 +237,4 @@ This project is for educational and portfolio purposes.
 
 ## 🙏 Acknowledgments
 
-- Analysis framework inspired by real-world business consulting practices
-- Data visualization best practices from industry standards
+Analysis framework inspired by real-world business consulting practices and data-driven decision-making methodologies.
