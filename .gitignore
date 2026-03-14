@@ -1,0 +1,53 @@
+# ============================================
+# Business Analysis - GitIgnore
+# ============================================
+
+# Data files (can be large)
+*.csv
+*.xlsx
+*.xls
+data/*.csv
+data/*.xlsx
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Output files
+outputs/*.png
+outputs/*.jpg
+outputs/*.pdf
+
+# Logs
+*.log
+```
+
+---
+
+### **2. `data/.gitkeep`**
+```
+# This file ensures the data/ folder is tracked by Git
+# Place CSV and Excel files here
+# Note: Data files are in .gitignore (too large for GitHub)
