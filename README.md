@@ -31,7 +31,6 @@ Professional business performance analysis focusing on payroll optimization, rev
 
 ### 🎯 Strategic Opportunities
 - **15% potential cost savings** through Administrative automation
-- **€XXX,XXX revenue upside** from training inactive employees
 - **Client diversification** needed to reduce concentration risk
 - **Tiered pricing strategy** to capture broader market segments
 
