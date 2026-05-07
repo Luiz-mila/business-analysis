@@ -220,11 +220,11 @@ Business Intelligence & Data Analyst
 
 Data professional focused on transforming complex datasets into strategic insights. Experienced in revenue analysis, performance metrics, and behavioral pattern detection.
 
-📧 Email: luizmilare958@gmail.com
+📧 Email: milahercu@gmail.com
 
-💼 LinkedIn: www.linkedin.com/in/luiz-milar%C3%A9-a5869519a/
+💼 LinkedIn: www.linkedin.com/in/luiz-milaré/
 
-🐙 GitHub: https://github.com/Luiz-mila
+🐙 GitHub: github.com/Luiz-mila
 
 ---
 
